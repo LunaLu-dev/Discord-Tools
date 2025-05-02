@@ -29,6 +29,7 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         ServerIdInput = new System.Windows.Forms.TextBox();
         ServerIDLabel = new System.Windows.Forms.Label();
         Submit = new System.Windows.Forms.Button();
@@ -60,6 +61,7 @@ partial class Form1
         Submit.TabIndex = 2;
         Submit.Text = "Check Server";
         Submit.UseVisualStyleBackColor = true;
+        Submit.Click += Submit_Click;
         // 
         // Form1
         // 
@@ -69,6 +71,7 @@ partial class Form1
         Controls.Add(Submit);
         Controls.Add(ServerIDLabel);
         Controls.Add(ServerIdInput);
+        Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
         Text = "Discord Tool";
         ResumeLayout(false);
         PerformLayout();

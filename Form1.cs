@@ -11,7 +11,6 @@ public partial class Form1 : Form
 
     public class DiscordResponse
     {
-        public string message { get; set; }
         public int code { get; set; }
     }
 

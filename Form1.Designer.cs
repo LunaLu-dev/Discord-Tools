@@ -31,25 +31,24 @@ partial class Form1
     {
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         ServerIdInput = new System.Windows.Forms.TextBox();
-        ServerIDLabel = new System.Windows.Forms.Label();
+        label1 = new System.Windows.Forms.Label();
         Submit = new System.Windows.Forms.Button();
+        label2 = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
         // ServerIdInput
         // 
         ServerIdInput.Location = new System.Drawing.Point(15, 59);
         ServerIdInput.Name = "ServerIdInput";
-        ServerIdInput.Size = new System.Drawing.Size(517, 27);
+        ServerIdInput.Size = new System.Drawing.Size(517, 23);
         ServerIdInput.TabIndex = 0;
         // 
-        // ServerIDLabel
+        // label1
         // 
-        ServerIDLabel.Font = new System.Drawing.Font("Segoe UI", 15F);
-        ServerIDLabel.Location = new System.Drawing.Point(15, 23);
-        ServerIDLabel.Name = "ServerIDLabel";
-        ServerIDLabel.Size = new System.Drawing.Size(277, 33);
-        ServerIDLabel.TabIndex = 1;
-        ServerIDLabel.Text = "Server ID";
+        label1.Location = new System.Drawing.Point(0, 0);
+        label1.Name = "label1";
+        label1.Size = new System.Drawing.Size(100, 23);
+        label1.TabIndex = 3;
         // 
         // Submit
         // 
@@ -63,21 +62,32 @@ partial class Form1
         Submit.UseVisualStyleBackColor = true;
         Submit.Click += Submit_Click;
         // 
+        // label2
+        // 
+        label2.Font = new System.Drawing.Font("Segoe UI", 15F);
+        label2.Location = new System.Drawing.Point(22, 20);
+        label2.Name = "label2";
+        label2.Size = new System.Drawing.Size(100, 23);
+        label2.TabIndex = 4;
+        label2.Text = "Server ID";
+        // 
         // Form1
         // 
-        AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(544, 648);
+        Controls.Add(label2);
         Controls.Add(Submit);
-        Controls.Add(ServerIDLabel);
+        Controls.Add(label1);
         Controls.Add(ServerIdInput);
         Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
+        Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         Text = "Discord Tool";
         ResumeLayout(false);
         PerformLayout();
     }
 
-    private System.Windows.Forms.Label ServerIDLabel;
+    private System.Windows.Forms.Label label2;
 
     private System.Windows.Forms.Button Submit;
 
